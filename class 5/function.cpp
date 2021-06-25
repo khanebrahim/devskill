@@ -1,25 +1,22 @@
 #include <iostream>
 using namespace std;
- 
-int main()
-{
-    // an array of 10 integers. 
-    // If arr[0] is stored at
-    // address x, then arr[1] is
-    // stored at x + sizeof(int)
-    // arr[2] is stored at x +
-    // sizeof(int) + sizeof(int)
-    // and so on.
-    int arr[5], i;
- 
-    cout << "Size of integer in this compiler is "
-         << sizeof(int) << "\n";
- 
-    for (i = 0; i < 5; i++)
-        // The use of '&' before a variable name, yields
-        // address of variable.
-        cout << "Address arr[" << i << "] is " << &arr[i]
-             << "\n";
- 
+
+int main() {
+    int numbers[5];
+
+    cout << "Enter 5 numbers: " << endl;
+
+    //  store input from user to array
+    for (int i = 0; i < 5; ++i) {
+        cin >> numbers[i];
+    }
+
+    cout << "The numbers are: ";
+
+    //  print array elements
+    for (int n = 0; n < 5; ++n) {
+        cout << numbers[n] << "  ";
+    }
+
     return 0;
 }
