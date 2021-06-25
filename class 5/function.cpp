@@ -14,7 +14,7 @@ int main() {
     cout << "The numbers are: ";
 
     //  print array elements
-    for (int n = 0; n < 5; ++n) {
+    for (int n = 0; n < 5; --n) {
         cout << numbers[n] << "  ";
     }
 
